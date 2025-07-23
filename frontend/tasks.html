@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tasks</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h2>Task Management</h2>
+
+  <div id="task-form">
+    <input type="text" id="task-title" placeholder="Task title" />
+    <input type="text" id="task-description" placeholder="Description" />
+    <input type="date" id="task-deadline" />
+    <input type="text" id="task-category" placeholder="Category" />
+    <input type="text" id="task-assignee" placeholder="Assignee ID" />
+    <button onclick="createTask()">Create Task</button>
+  </div>
+
+  <h3>Task List</h3>
+  <div id="tasks-list"></div>
+
+  <script src="js/api.js"></script>
+  <script src="js/tasks.js"></script>
+</body>
+</html>
